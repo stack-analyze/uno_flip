@@ -10,11 +10,11 @@ List<Rule> unoFlipRules = [
   Rule(
       "decir uno",
       "cuando tiras tu penultima carta debes decir uno antes que te descubra o de lo contrario debes tomar dos cartas de la pila para tomar.",
-      "assets/toma1.png"),
+      "assets/uno_logo.webp"),
   Rule(
       "como ganar",
       "la forma de ganar en este uno es. te desaches de todas tus cartas.",
-      "assets/toma1.png"),
+      "assets/win.webp"),
   Rule(
       "carta flip",
       "lado claro: cuando tiras esta carta, todo cambia del lado oscuro al lado claro y viceversa. Después de que se tira la carta Flip, se voltean la pila para tirar (la carta recién jugada quedará abajo), la pila para tomar y, finalmente, las manos de cada jugador. Este nuevo lado seguirá en juego hasta que otro jugador tire una carta Flip, lo que cambiará nuevamente el lado. Esta carta solo se puede tirar sobre una carta del mismo color u otra carta Flip. Si esta carta se voltea al comienzo del juego, la baraja se gira inmediatamente hacia el lado oscuro.\n CUANDO SE VOLTEA LA BARAJA, SI LA NUEVA CARTA SUPERIOR DE LA PILA PARA TIRAR ES UNA CARTA DE ACCIÓN (REVERSA, SALTA, TOMAR, TIRAR) NO TIENES QUE REALIZAR LA ACCIÓN. SI LA NUEVA CARTA SUPERIOR DE LA PILA ES UN COMODÍN, EL JUGADOR QUE JUGÓ LA CARTA FLIP ELIGE EL COLOR.",
