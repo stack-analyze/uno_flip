@@ -8,13 +8,25 @@ class RulesScreen extends StatelessWidget {
   Widget build(BuildContext context) => ListView.separated(
         itemCount: unoFlipRules.length,
         separatorBuilder: (ctx, i) => const Divider(),
-        itemBuilder: (ctx, i) => ListTile(
-          leading: Image.asset(
-            unoFlipRules[i].card,
-            fit: BoxFit.fill,
-          ),
-          title: Text(unoFlipRules[i].title),
-          subtitle: Text(unoFlipRules[i].desc),
+        itemBuilder: (ctx, i) => Row(
+        	children: [
+        		Image.asset(
+        			unoFlipRules[i].card, 
+        			fit: BoxFit.cover,
+        			height: 100.0
+        		),
+        		Flexible(
+        			child: ListTile(
+        			title: Text(unoFlipRules[i].title),
+        			subtitle: Text(unoFlipRules[i].desc),
+        			)
+        		),
+        		if (unoFlipRules[i].altCard != null) Image.asset(
+        			unoFlipRules[i].altCard!,
+        			fit: BoxFit.cover,
+        			height: 100.0
+        		)
+        	]
         ),
       );
 }
